@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organ Donor & Finder</title>
+  <style>
+    body {font-family: Arial, sans-serif; background: #f2f2f7; margin: 0; padding: 0; color: #333; animation: fadeIn 0.6s ease-in-out;}
+    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+    header {background: #4a60ff; color: white; padding: 20px; text-align: center; font-size: 28px; font-weight: bold;}
+    nav {display: flex; justify-content: center; gap: 20px; background: #e6e6ff; padding: 15px;}
+    nav a {text-decoration: none; font-weight: bold; color: #4a60ff; transition: 0.2s;}
+    nav a:hover {color:#2f3bcf;}
+    .container {max-width: 900px; margin: 30px auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);}
+    .hero-img {width:100%; border-radius:12px; margin-bottom:20px;}
+  </style>
+</head>
+<body>
+  <header>Organ Donor & Finder Portal</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="donor.html">Become a Donor</a>
+    <a href="finder.html">Find a Donor</a>
+  </nav>
+
+  <div class="container">
+    <img src="organ donation.jpg" class="hero-img" alt="Organ Donation" />
+    <h2>Welcome</h2>
+    <p>This portal connects life-saving organ donors with people in need. </p>
+  </div>
+</body>
+</html>
+
+
+donor.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Donor</title>
+  <style>
+    body {font-family: Arial; background:#f2f2f7; margin:0; padding:0; animation:fadeIn 0.6s ease-in-out;}
+    @keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
+    header {background:#4a60ff; color:white; padding:20px; text-align:center; font-size:26px; font-weight:bold;}
+    nav {display:flex; justify-content:center; gap:20px; background:#e6e6ff; padding:15px;}
+    nav a {text-decoration:none; font-weight:bold; color:#4a60ff;}
+    .container {max-width:900px; margin:30px auto; background:white; padding:25px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1);} 
+    input, select, textarea, button {width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:8px;} 
+    button {background:#4a60ff; color:white; border:none; font-weight:bold;}
+  </style>
+</head>
+<body>
+  <header>Become an Organ Donor</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="donor.html">Become a Donor</a>
+    <a href="finder.html">Find a Donor</a>
+  </nav>
+  <div class="container">
+    <h2>Donor Registration</h2>
+    <img src="donor.png" style="width:100%; border-radius:12px;" />
+    <input type="text" placeholder="Full Name" />
+    <input type="number" placeholder="Age" />
+    <select>
+      <option>Select Organ to Donate</option>
+      <option>Kidney</option>
+      <option>Liver</option>
+      <option>Heart</option>
+      <option>Cornea</option>
+    </select>
+    <textarea placeholder="Health Conditions (if any)"></textarea>
+    <button>Submit Donor Form</button>
+  </div>
+</body>
+</html>
+
+
+finder.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find a Donor</title>
+  <style>
+    body {font-family: Arial; background:#f2f2f7; margin:0; padding:0; animation:fadeIn 0.6s;} 
+    @keyframes fadeIn {from{opacity:0;} to{opacity:1;}} 
+    header {background:#4a60ff; color:white; padding:20px; text-align:center; font-size:26px;} 
+    nav {display:flex; justify-content:center; gap:20px; background:#e6e6ff; padding:15px;} 
+    nav a {text-decoration:none; font-weight:bold; color:#4a60ff;} 
+    .container {max-width:900px; margin:30px auto; background:white; padding:25px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1);} 
+    button, select {padding:12px; width:100%; border-radius:8px; border:1px solid #ccc; margin-top:10px;} 
+  </style>
+</head>
+<body>
+  <header>Find an Organ Donor</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="donor.html">Become a Donor</a>
+    <a href="finder.html">Find a Donor</a>
+  </nav>
+  <div class="container">
+    <h2>Search Donors</h2>
+    <img src="finder.png" style="width:100%; border-radius:12px;" />
+    <select>
+      <option>Select Required Organ</option>
+      <option>Kidney</option>
+      <option>Liver</option>
+      <option>Heart</option>
+      <option>Cornea</option>
+    </select>
+    <button>Search Donors</button>
+  </div>
+</body>
+</html>
